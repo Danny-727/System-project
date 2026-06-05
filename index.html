@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tourly – Journey To Explore World</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body id="top">
+
+<!-- ===== HEADER ===== -->
+<header class="header" data-header>
+  <div class="overlay" data-overlay></div>
+
+  <div class="header-top">
+    <div class="container">
+
+      <a href="tel:+01123456790" class="helpline-box">
+        <div class="icon-box">
+          <i class="fas fa-phone"></i>
+        </div>
+        <div class="wrapper">
+          <p class="helpline-title">For Further Inquiries:</p>
+          <p class="helpline-number">+01 (123) 4567 90</p>
+        </div>
+      </a>
+
+      <a href="#" class="logo">Tourly</a>
+
+      <div class="header-btn-group">
+        <button class="search-btn" aria-label="Search">
+          <i class="fas fa-search"></i>
+        </button>
+        <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="header-bottom">
+    <div class="container">
+
+      <ul class="social-list">
+        <li><a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+
+      <nav class="navbar" data-navbar>
+        <div class="navbar-top">
+          <span class="logo-text">Tourly</span>
+          <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+          <li><a href="#home"        class="navbar-link" data-nav-link>Home</a></li>
+          <li><a href="#about"       class="navbar-link" data-nav-link>About Us</a></li>
+          <li><a href="#destination" class="navbar-link" data-nav-link>Destination</a></li>
+          <li><a href="#package"     class="navbar-link" data-nav-link>Packages</a></li>
+          <li><a href="#gallery"     class="navbar-link" data-nav-link>Gallery</a></li>
+          <li><a href="#contact"     class="navbar-link" data-nav-link>Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <button class="btn btn-primary">Book Now</button>
+
+    </div>
+  </div>
+</header>
+
+<!-- ===== MAIN ===== -->
+<main>
+  <article>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container">
+        <h2 class="h1 hero-title">Journey To Explore World</h2>
+        <p class="hero-text">
+          Discover breathtaking destinations across the globe. From sun-kissed beaches to misty
+          mountain peaks, let us craft the perfect travel experience just for you.
+        </p>
+        <div class="btn-group">
+          <button class="btn btn-primary">Learn More</button>
+          <button class="btn btn-secondary">Book Now</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOUR SEARCH -->
+    <section class="tour-search">
+      <div class="container">
+        <form class="tour-search-form" action="#" method="get">
+
+          <div class="input-wrapper">
+            <label for="destination" class="input-label">Search Destination</label>
+            <input type="text" id="destination" name="destination" class="input-field" placeholder="Where to go?" />
+          </div>
+
+          <div class="input-wrapper">
+            <label for="people" class="input-label">Number of Guests</label>
+            <input type="number" id="people" name="people" class="input-field" placeholder="0" min="1" max="50" />
+          </div>
+
+          <div class="input-wrapper">
+            <label for="checkin" class="input-label">Check-in Date</label>
+            <input type="date" id="checkin" name="checkin" class="input-field" />
+          </div>
+
+          <div class="input-wrapper">
+            <label for="checkout" class="input-label">Check-out Date</label>
+            <input type="date" id="checkout" name="checkout" class="input-field" />
+          </div>
+
+          <button type="submit" class="btn btn-secondary">Inquire Now</button>
+
+        </form>
+      </div>
+    </section>
+
+    <!-- POPULAR DESTINATIONS -->
+    <section class="popular" id="destination">
+      <div class="container">
+        <p class="section-subtitle">Uncover Places</p>
+        <h2 class="h2 section-title">Popular Destinations</h2>
+        <p class="section-text">
+          Explore the world's most beloved destinations hand-picked by our travel experts.
+          From historic wonders to natural paradises, find your next adventure.
+        </p>
+
+        <ul class="popular-list">
+
+          <li>
+            <div class="popular-card">
+              <figure class="card-img">
+                <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=600&auto=format&fit=crop&q=80" alt="Amalfi Coast, Italy" loading="lazy" />
+              </figure>
+              <div class="card-content">
+                <div class="card-rating">
+                  <i class="fas fa-star star-icon"></i>
+                  <span>4.8</span>
+                </div>
+                <p class="card-subtitle"><a href="#">Italy</a></p>
+                <h3 class="h3 card-title"><a href="#">Amalfi Coast</a></h3>
+                <p class="card-text">Stunning cliffside villages overlooking the azure Mediterranean Sea.</p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="popular-card">
+              <figure class="card-img">
+                <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&auto=format&fit=crop&q=80" alt="Burj Khalifa, Dubai" loading="lazy" />
+              </figure>
+              <div class="card-content">
+                <div class="card-rating">
+                  <i class="fas fa-star star-icon"></i>
+                  <span>4.9</span>
+                </div>
+                <p class="card-subtitle"><a href="#">Dubai</a></p>
+                <h3 class="h3 card-title"><a href="#">Burj Khalifa</a></h3>
+                <p class="card-text">Marvel at the world's tallest skyscraper and the dazzling city below.</p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="popular-card">
+              <figure class="card-img">
+                <img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=600&auto=format&fit=crop&q=80" alt="Kyoto Temple, Japan" loading="lazy" />
+              </figure>
+              <div class="card-content">
+                <div class="card-rating">
+                  <i class="fas fa-star star-icon"></i>
+                  <span>4.7</span>
+                </div>
+                <p class="card-subtitle"><a href="#">Japan</a></p>
+                <h3 class="h3 card-title"><a href="#">Kyoto Temple</a></h3>
+                <p class="card-text">Ancient temples and traditional gardens in Japan's cultural heart.</p>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+
+        <button class="btn btn-primary">More Destinations</button>
+      </div>
+    </section>
+
+    <!-- PACKAGES -->
+    <section class="package" id="package">
+      <div class="container">
+        <p class="section-subtitle">Popular Packages</p>
+        <h2 class="h2 section-title">Checkout Our Packages</h2>
+        <p class="section-text">
+          Carefully curated travel packages designed to give you unforgettable experiences
+          at the best value. Adventure awaits — all you have to do is pack.
+        </p>
+
+        <ul class="package-list">
+
+          <li>
+            <div class="package-card">
+              <figure class="card-banner">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=700&auto=format&fit=crop&q=80" alt="Beach Holiday" loading="lazy" />
+              </figure>
+              <div class="card-content">
+                <h3 class="h3 card-title">Experience The Great Holiday On Beach</h3>
+                <p class="card-text">
+                  Relax on pristine white-sand beaches, enjoy crystal-clear waters and
+                  indulge in world-class resort amenities.
+                </p>
+                <ul class="card-meta-list">
+                  <li class="card-meta-item">
+                    <div class="meta-box"><i class="fas fa-clock"></i><p class="text">7D/6N</p></div>
+                  </li>
+                  <li class="card-meta-item">
+                    <div class="meta-box"><i class="fas fa-user"></i><p class="text">Pax: 10</p></div>
+                  </li>
+                  <li class="card-meta-item">
+                    <div class="meta-box"><i class="fas fa-map-marker-alt"></i><p class="text">Malaysia</p></div>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-price">
+                <div class="wrapper">
+                  <p class="reviews">(25 reviews)</p>
+                  <div class="card-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star star-empty"></i>
+                  </div>
+                </div>
+                <p class="price">$750 <span>/ per person</span></p>
+                <button class="btn btn-secondary">Book Now</button>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="package-card">
+              <figure class="card-banner">
+                <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=700&auto=format&fit=crop&q=80" alt="River Holiday" loading="lazy" />
+              </figure>
+              <div class="card-content">
+                <h3 class="h3 card-title">Summer Holiday To The River Valley</h3>
+                <p class="card-text">
+                  Navigate stunning river valleys, explore lush rainforests and discover
+                  remote communities along the way.
+                </p>
+                <ul class="card-meta-list">
+                  <li class="card-meta-item">
+                    <div class="meta-box"><i class="fas fa-clock"></i><p class="text">7D/6N</p></div>
+                  </li>
+                  <li class="card-meta-item">
+                    <div class="meta-box"><i class="fas fa-user"></i><p class="text">Pax: 10</p></div>
+                  </li>
+                  <li class="card-meta-item">
+                    <div class="meta-box"><i class="fas fa-map-marker-alt"></i><p class="text">Thailand</p></div>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-price">
+                <div class="wrapper">
+                  <p class="reviews">(20 reviews)</p>
+                  <div class="card-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star star-empty"></i>
+                  </div>
+                </div>
+                <p class="price">$520 <span>/ per person</span></p>
+                <button class="btn btn-secondary">Book Now</button>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="package-card">
+              <figure class="card-banner">
+                <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?w=700&auto=format&fit=crop&q=80" alt="Santorini Vacation" loading="lazy" />
+              </figure>
+              <div class="card-content">
+                <h3 class="h3 card-title">Santorini Island's Weekend Vacation</h3>
+                <p class="card-text">
+                  Iconic whitewashed buildings perched above a glittering caldera —
+                  experience Greek magic at its finest.
+                </p>
+                <ul class="card-meta-list">
+                  <li class="card-meta-item">
+                    <div class="meta-box"><i class="fas fa-clock"></i><p class="text">5D/4N</p></div>
+                  </li>
+                  <li class="card-meta-item">
+                    <div class="meta-box"><i class="fas fa-user"></i><p class="text">Pax: 8</p></div>
+                  </li>
+                  <li class="card-meta-item">
+                    <div class="meta-box"><i class="fas fa-map-marker-alt"></i><p class="text">Greece</p></div>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-price">
+                <div class="wrapper">
+                  <p class="reviews">(40 reviews)</p>
+                  <div class="card-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+                <p class="price">$660 <span>/ per person</span></p>
+                <button class="btn btn-secondary">Book Now</button>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+
+        <button class="btn btn-primary">View All Packages</button>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="gallery" id="gallery">
+      <div class="container">
+        <p class="section-subtitle">Photo Gallery</p>
+        <h2 class="h2 section-title">Photos From Travellers</h2>
+        <p class="section-text">
+          Real moments captured by real travellers. Get inspired for your next journey
+          through the lens of our global travel community.
+        </p>
+
+        <ul class="gallery-list">
+          <li class="gallery-item">
+            <figure class="gallery-image">
+              <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=600&auto=format&fit=crop&q=80" alt="Travel gallery 1" loading="lazy" />
+            </figure>
+          </li>
+          <li class="gallery-item">
+            <figure class="gallery-image">
+              <img src="https://images.unsplash.com/photo-1488085061387-422e29b40080?w=600&auto=format&fit=crop&q=80" alt="Travel gallery 2" loading="lazy" />
+            </figure>
+          </li>
+          <li class="gallery-item">
+            <figure class="gallery-image">
+              <img src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?w=600&auto=format&fit=crop&q=80" alt="Travel gallery 3" loading="lazy" />
+            </figure>
+          </li>
+          <li class="gallery-item">
+            <figure class="gallery-image">
+              <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=600&auto=format&fit=crop&q=80" alt="Travel gallery 4" loading="lazy" />
+            </figure>
+          </li>
+          <li class="gallery-item">
+            <figure class="gallery-image">
+              <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=600&auto=format&fit=crop&q=80" alt="Travel gallery 5" loading="lazy" />
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" id="contact">
+      <div class="container">
+        <div class="cta-content">
+          <p class="section-subtitle">Call To Action</p>
+          <h2 class="h2 section-title">Ready For An Unforgettable Journey?</h2>
+          <p class="section-text">
+            Let our travel experts craft your dream itinerary. Whether it's a romantic
+            getaway or a group adventure, we make every trip extraordinary.
+          </p>
+        </div>
+        <button class="btn btn-secondary">Contact Us</button>
+      </div>
+    </section>
+
+  </article>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="container">
+
+      <div class="footer-brand">
+        <div class="logo-text">Tourly</div>
+        <p class="footer-text">
+          Your trusted travel companion since 2010. We believe every journey should be
+          seamless, memorable, and tailored to you.
+        </p>
+      </div>
+
+      <div class="footer-contact">
+        <h4 class="contact-title">Contact Us</h4>
+        <p class="contact-text">Feel free to reach us anytime!</p>
+        <ul>
+          <li class="contact-item">
+            <i class="fas fa-phone"></i>
+            <a href="tel:+01123456790" class="contact-link">+01 (123) 4567 90</a>
+          </li>
+          <li class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:info@tourly.com" class="contact-link">info@tourly.com</a>
+          </li>
+          <li class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <address>3146 Koontz Lane, California</address>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-form">
+        <p class="form-text">Subscribe to our newsletter for travel updates &amp; exclusive deals!</p>
+        <div class="form-wrapper">
+          <input type="email" class="input-field" placeholder="Enter your email address" aria-label="Email address" />
+          <button type="submit" class="btn btn-secondary">Subscribe</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <p class="copyright">
+        &copy; 2024 <a href="#">Tourly</a>. All rights reserved.
+      </p>
+      <ul class="footer-bottom-list">
+        <li><a href="#" class="footer-bottom-link">Privacy Policy</a></li>
+        <li><a href="#" class="footer-bottom-link">Terms &amp; Conditions</a></li>
+        <li><a href="#" class="footer-bottom-link">FAQ</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<!-- GO TO TOP -->
+<a href="#top" class="go-top" data-go-top aria-label="Go to top">
+  <i class="fas fa-chevron-up"></i>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
